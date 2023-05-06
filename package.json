@@ -1,6 +1,6 @@
 {
   "name": "vite-file-import-transform",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "`require('xxxx')` to `new URL('xxxx', import.meta.url).href`",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -12,6 +12,7 @@
   "keywords": ["vite", "import", "require", "transform"],
   "author": "",
   "license": "ISC",
+  "repository": { "type":"git", "url":"git://github.com/goblin-pitcher/vite-file-import-transform.git#main" },
   "devDependencies": {
     "@types/babel__generator": "^7.6.4",
     "@types/glob": "^8.1.0",
