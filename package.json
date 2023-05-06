@@ -1,0 +1,32 @@
+{
+  "name": "vite-file-import-transform",
+  "version": "1.0.0",
+  "description": "`require('xxxx')` to `new URL('xxxx', import.meta.url).href`",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "ts-node  __test__/index.ts",
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean"
+  },
+  "keywords": ["vite", "import", "require", "transform"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/babel__generator": "^7.6.4",
+    "@types/glob": "^8.1.0",
+    "@types/node": "^20.1.0",
+    "glob": "^10.2.2",
+    "ts-node": "^10.9.1",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4",
+    "vite": "^4.3.5"
+  },
+  "dependencies": {
+    "@babel/generator": "^7.21.5",
+    "@babel/parser": "^7.21.8",
+    "@babel/traverse": "^7.21.5",
+    "@babel/types": "^7.21.5",
+    "@types/babel__traverse": "^7.18.5"
+  }
+}
